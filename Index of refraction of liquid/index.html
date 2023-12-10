@@ -47,58 +47,63 @@
 <body>
 
     <header>
-        <h1>Data Logger 22.03 Fall 2023 Final Project</h1>
+        <h1>Index of Refraction of Liquids Winter 2021</h1>
     </header>
 
     <main>
         <section><center>
             <img src="Side_22.03.jpg" alt="Cover Photo" width='300' height-'300'>
             <h2>Acknowledgements</h2>
-            <p><strong>Author:</strong> Abigail Dulski, B.S. in Computation and Cognition 2024</p>
-            <p><strong>Author:</strong> Florida Cishesa, B.S. in Mechanical Engineering 2026</p></center>
+            <p><strong>Author:</strong> Florida Cishesa, B.S. in Mechanical Engineering 2026</p>
+            <p><strong>Author:</strong> Charline Jean Pierre, Bellevue College 2021</p>
+            <p><strong>Author:</strong> Adrian Allen Mercado, Bellevue College 2022</p>
+            <p><strong>Author:</strong> Joel Graf, Bellevue College 2021</p></center>
         </section>
         
         <section>
             <h2>1. Introduction</h2>
             <p>
                 <ul>
-                    <li> Tasked with improving the current data logger system used by the Blackfeet Indian Reservation in northern Montana</li>
-                    <li> The reservation uses the data loggers for research purposes</li>
+                    <li> The goal of this experiment is to test a method to find the index of refraction of water by using Snell’s law which is given by :
+                    </li>
+                    <li> n1 sin(θ1)= n2sin(θ2)</li>
                     <li> Data loggers are typically set up facing each other 15 ft apart</li>
                     <li> Components of the current logger are rebar, a camera trap, an audio recorder, and batteries</li>
-                    <li> Current system is inefficient and laborous</li>
-                    <li> Using solar panels, a voltage booster, and soldering a cutting of the components wires we were able to come up with a new system resolving many of the complications of the current one</li>
-                    <li> New system components are rebar, a camera trap, an audio recorder, a solar panel pack, and a portable charger</li>
+                    <li> where n represents the index of refraction of each material, in our case is air and water. </li>
+                    <li> θ1 is angle of incidence and θ2 is angle of refraction.</li>
+                    <li> The material used included a plastic container, a laser pointer ,and water.</li>
                 </ul>
             </p>
         </section>
 
          <section>
-            <h2>2. Problem Statement</h2>
-            <p> We aim to address the problems below.
-                <ul>
+            <h2>2. First Run Procedure</h2>
+            <p> About two third of the container was filled with water. Then the light of the beam was pointed so that it hit one side of the container to make the incident angle, then the light refracted at another side of the container.
+            </p>
+            <p> Different methods were used by each group member for finding multiple angle of incidence and refraction.
+                <!-- <ul>
                     <li> The current system is not easy to assemble and carry </li>
                     <li> The current system is not safe from animals and bad weather</li>
                     <li> The current system requires battery maintenance </li> 
                     <li> Battery maintenance requires numerous treks to the data logger every recording period </li>
                     <li> The treks are unsafe to the researchers doing them</li>
-                </ul>  
+                </ul>   -->
              <br><center><figure><img src="Audio Component Electronics.jpg" alt="Cover Photo" width='400' height='400' style=inline-block><figcaption>Current audio component electronics set up with batteries</figcaption></figure>
                          <figure><img src="Camera Component Electronics.jpg" alt="Cover Photo" width='400' height='400' style=inline-block><figcaption>Current camera component electronics set up with batteries</figcaption></figure></center>
             </p>
         </section>
 
-        <section>
-            <h2>3. Project Goals</h2>
+        <!-- <section>
+            <h2>3. First Data</h2>
             <p>Our goals for the project are below. Completion of our goals will prevent the need for frequent visits to the site to replace batteries and it will make sure the equipment is not damaged by animals or bad weather. 
                 <ul>
                     <li> Integrate a self-powered mechanism for the data logger</li>
                     <li> Design a more robust carrier of the equipment</li>
                 </ul>
             </p>
-        </section>
+        </section> -->
 
-        <section>
+        <!-- <section>
             <h2>4. Project Timeline</h2>
             <p>A rough timeline of our porject is below:
                 <ul>
@@ -115,16 +120,19 @@
                     <li> Integration of the battery and the solar panel</li>
                 </ul>
             </p>
-        </section>
+        </section> -->
 
         <section>
-            <h2>5. Process and Methodology</h2>
+            <h2>5. Initial Run Analysis and Conclusion</h2>
             <p>A description of the process followed to build the project is below:
                 <ul>
-                    <li> Analyzed the circuit of the camera to uncover it needs 12V of power</li>
-                    <li> Analyzed the circuit of the audio component to uncover it needs 5V of power</li>
-                    <li> Analyzed the power provided by the solar panel and the portable charger</li>
-                    <li> Analyzed the amount of current produced by the solar panel</li>
+                    <li> True Value: n=1.33</li>
+                    <li> Experimental Value: n=1.26 ± .07
+                    sin(𝜃I)/sin(𝜃R) = n</li>
+                    <li> The theoretical value seems to be “trending” towards the “accepted” value but it doesn’t exactly agree with the accepted value itself. </li>
+                    <li> This brings up questions such as:</li>
+                    <li> Is the data legitimate?</li>
+                    <li> Does the data disprove the value, 1.33?</li>
                 </ul>
             <br>Methodologies and tools used are below:
                 <ul>
@@ -132,13 +140,14 @@
                     <li> Original Prusa i3 3D printer </li>
                     <li> Soldered electronic components</li>
                 </ul>
-            <br>Challenges in the process faced and their solutions are outlined below:
+            <br>Drawbacks of the Initial Data Collection
             <ul>
-                <li> Camera component needs 12V of power, but the battery only provides 5V of power</li>
+                <li> Multiple Procedure</li>
                 <ol> 
-                    <li> We solved this problem by using a voltage booster</li>
+                    <li> Due to the remote nature of this experiment, each of us used different equipmets to collect data.</li>
+                    <li> This created the lack of uniformity.</li>
                 </ol>
-                <li> The audio component was not driving enough current originally at all times originally to keep it on</li>
+                <!-- <li> The audio component was not driving enough current originally at all times originally to keep it on</li>
                 <ol>
                     <li> We used a converter card in the audio component</li>
                 </ol>
@@ -149,7 +158,7 @@
                 <li> The whole system needs to be held on a single rebar and the parts need to be able to be attached to the rebar</li>
                 <ol>
                     <li> Parts have a nut and bolt attachment that holds them stable onto the rebar</li>
-                </ol>
+                </ol> -->
             </ul>
             </p>
         </section>
